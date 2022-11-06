@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylemenu.css">
+    <title>Ini Iklan</title>
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" ><img src="img/logo1.png" class="logo" ></a>
+        </header>
+        <div class="content">
+            <div class="textbox"> 
+                <h2>Mau Nongkrong Hemat? Disini<span class="span">Solusinya</span></h2>
+                <a href="" class="learn">Learn More <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-emoji-sunglasses-fill" viewBox="0 0 16 16">
+                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zM2.31 5.243A1 1 0 0 1 3.28 4H6a1 1 0 0 1 1 1v.116A4.22 4.22 0 0 1 8 5c.35 0 .69.04 1 .116V5a1 1 0 0 1 1-1h2.72a1 1 0 0 1 .97 1.243l-.311 1.242A2 2 0 0 1 11.439 8H11a2 2 0 0 1-1.994-1.839A2.99 2.99 0 0 0 8 6c-.393 0-.74.064-1.006.161A2 2 0 0 1 5 8h-.438a2 2 0 0 1-1.94-1.515L2.31 5.243zM4.969 9.75A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .866-.5z"/>
+                  </svg></a>
+            </div>
+            <div class="imgbox">
+                <img src="" class="starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img class="bobalogo" src="img/kentang.png" onclick="imgSlider('img/kentang_asli.png'); changeColorCircle('#b30c0c');changeColorText('#b30c0c');changeColorBackground('#b30c0c')"></li>
+            <li><img src="img/coffeelogo.png.png" onclick="imgSlider('img/coffee.png.png'); changeColorCircle(' #6F4E37');changeColorText(' #6F4E37');changeColorBackground(' #6F4E37')"></li>
+            <li><img src="img/burgerlogo.png" onclick="imgSlider('img/burger.png'); changeColorCircle('#fcce00'); changeColorText('#fcce00');changeColorBackground('#fcce00'); imgVarian('coffeelogo2.png')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="https://facebook.com" target="_blank"><img src="img/facebook.png"></a></li>
+            <li><a href="https://twitter.com" target="_blank"><img src="img/twitter.png"></a></li>
+            <li><a href="https://instagram.com" target="_blank"><img src="img/instagram.png"></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src = anything
+        }
+        function changeColorCircle(color){
+            const circle = document.querySelector('.circle')
+            circle.style.background = color;
+        }
+        function changeColorText(color){
+            const text = document.querySelector('.span')
+            text.style.color = color;
+        }
+        function changeColorBackground(color){
+            const back = document.querySelector('.learn')
+            back.style.background = color;
+        }
+        function imgVarian(anything){
+            document.querySelector('.varian').src = anything;
+        }
+    </script>
+</body>
+</html>
